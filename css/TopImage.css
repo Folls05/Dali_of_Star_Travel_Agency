@@ -1,0 +1,152 @@
+/* * {
+    box-sizing: border-box
+} */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 80%;
+    background-color: #0D202B;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+    height: 95%;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: 10%;
+    margin-top: -22px;
+    height: 30%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    border-radius: 0 100% 100% 0;
+    user-select: none;
+}
+
+.changePage {
+    position: relative;
+    top: -21%;
+    font-size: 100px;
+    text-align: center;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 100% 0 0 100%;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(13, 32, 43, 0.8);
+}
+
+.textFirst {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.textSecond {
+    font-size: 20px;
+    margin-top: 00px;
+    margin-bottom: 30px;
+    margin-left: 110px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 30px;
+    color: #FFD981;
+    z-index: 10;
+    font-family: fantasy;
+}
+
+#bottomButton {
+    background-color: #0D202B;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 23%;
+    background-color: #d6d6d6;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin: 10px;
+    box-sizing: inherit;
+    margin-bottom: 100px;
+}
+
+.colorChange,
+.dot:hover {
+    background-color: #FFD981;
+}
+
+.mySlides {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

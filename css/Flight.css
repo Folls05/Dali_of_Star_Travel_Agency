@@ -1,0 +1,113 @@
+#flightBox {
+    display: none;
+}
+
+#switchFlightTaiwan {
+    background-color: #0D202B;
+    color: #FFD981;
+    border-radius: 100px;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+    cursor: pointer;
+}
+
+#switchFlightForeign {
+    cursor: pointer;
+}
+
+.flightEachItem {
+    height: 60px;
+    width: 17%;
+    font-size: 16px;
+}
+
+.flightEachItemSpan {
+    height: auto;
+}
+
+.flightEachItemSpan>button {
+    background-color: white;
+    color: #0D202B;
+    border: none;
+    height: 55px;
+    text-align: left;
+    font-size:15px;
+}
+
+.flightEachItemSpan>input {
+    background-color: white;
+    color: #0D202B;
+    border: none;
+    height: 55px;
+    text-align: left;
+}
+
+.inputTextFlightFrom, .inputTextFlightTo, .flightDirectTo, .flightDirectFrom, .planeHotelTo {
+    font-size: 23px;
+}
+
+.inputTextFlightFrom:focus, .inputTextFlightTo:focus, .flightDirectTo:focus, .flightDirectFrom:focus, .planeHotelTo:focus {
+    outline: none;
+}
+
+.inputTextFlightFrom:hover, .inputTextFlightTo:hover, .flightDirectTo:hover, .flightDirectFrom:hover, .planeHotelTo:hover {
+    background-color: rgba(13, 32, 43, 0.123);
+}
+
+#areaDownBoxFlightFrom, #areaDownBoxFlightTo, 
+#areaDownBoxDirectFrom, #areaDownBoxDirectTo {
+    position: absolute;
+    left: 1%;
+    top: 80%;
+    border: 1px solid #0D202B;
+    width: 55%;
+    background-color: white;
+    color: #0D202B;
+    text-align: 50px;
+    font-size: 20px;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    z-index: 50;
+    display: none;
+}
+
+#flightReturn {
+    text-align: left;
+}
+
+#flightDirect {
+    display: none;
+}
+
+#taiwanAirport, #taiwanAirport2 {
+    display: block;
+}
+
+#switchReturn {
+    background-color: #0D202B;
+    color: #FFD981;
+    border-radius: 100px;
+    position: relative;
+    bottom: -0.5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+#switchDirect {
+    cursor: pointer;
+}
+
+#flightClass {
+    font-size: 20px;
+    border: rgba(13, 32, 43, 0.123);
+    cursor: pointer;
+}
+
+.flightDirectFrom, .flightDirectTo, .flightDirectDate {
+    width: 24%;
+}
+
+.flightDirectPeople {
+    width: 18%;
+}

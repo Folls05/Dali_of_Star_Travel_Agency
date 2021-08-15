@@ -1,0 +1,380 @@
+#belowBox {
+    text-align: center;
+    margin-top: -250px;
+    padding-bottom: 2%;
+}
+
+#paddingBox {
+    padding-bottom: 5%;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+#belowInsideBox {
+    background-color: white;
+    text-align: center;
+    padding-top: 15%;
+    width: 80%;
+    /* margin: auto; */
+    margin-left: 10%;
+    height: 100%;
+}
+
+#loading {
+    padding-top: 10%;
+    display: none;
+}
+
+#belowInsideBox2 {
+    background-color: white;
+    text-align: center;
+    padding-top: 15%;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: 2s;
+}
+
+#belowInsideBox3 {
+    background-color: white;
+    text-align: center;
+    padding-top: 2%;
+    width: 100%;
+    /* margin: auto; */
+    height: 100%;
+    display: none;
+}
+
+#downMore {
+    font-size: 40px;
+    color: #dfe0e1;
+    font-weight: bold;
+    width: 20%;
+    margin-left: 40%;
+    display: none;
+}
+#downMore:hover {
+    color: #0D202B;
+    cursor: pointer;
+}
+#downMore2 {
+    font-size: 40px;
+    color: #dfe0e1;
+    font-weight: bold;
+    width: 20%;
+    margin-left: 40%;
+    display: none;
+}
+#downMore2:hover {
+    color: #0D202B;
+    cursor: pointer;
+}
+
+
+/* gallery */
+
+#islandTrain {
+    position: relative;
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#fireFly {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+}
+
+#palauHotel {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+#fallHotel {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+#sakura {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    margin: 5% 4% 5%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.wordBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .4s ease;
+    border: 0px solid white;
+    border-radius: 20px;
+}
+
+.imageBox:hover .wordBox {
+    height: 100%;
+}
+
+.imageWord {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.wordBox2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+    border: 0px solid white;
+    border-radius: 20px;
+}
+
+.imageBox2:hover .wordBox2 {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.imageWord2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.imageBox, .imageBox2 {
+    cursor: pointer;
+}
+
+#bottomLine {
+    border-bottom: 5px solid #FFD981;
+}
+
+#bottomBox {
+    text-align: center;
+    color: #FFD981;
+    padding-bottom: 12%;
+}
+
+#bottomSecondBox {
+    padding-left: 15%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#bottomNameBox {
+    text-align: left;
+    display: inline;
+    width: 30%;
+    float: left;
+}
+
+#bottomAboutBox {
+    display: inline;
+    text-align: left;
+    width: 20%;
+    float: left;
+    margin: 0% 5% 0% 10%;
+}
+
+#bottomCopyRightBox {
+    display: inline;
+    text-align: left;
+    float: left;
+    width: 20%;
+    margin-top: 3%;
+}
+
+.bottomTitle {
+    background-color: #FFD981;
+    color: #0D202B;
+    width: fit-content;
+    border: 1px solid #0D202B;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#bottomCompanyName {
+    background-color: #FFD981;
+    color: #0D202B;
+    width: fit-content;
+    border: 1px solid #0D202B;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.bottomSmall {
+    margin: 5px 0px 5px;
+    cursor: pointer;
+}
+.bottomSmall:hover {
+    color: #d6d6d6;
+}
+
+.bottomCopyRight {
+    opacity: 0.5;
+}
+
+
+/* itinerary */
+
+.itineraryBox {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#bg-image {
+    background-image: url("../img/東京京王廣場酒店.jpg");
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    width: 80%;
+    height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+
+#bg-image2 {
+    background-image: url("../img/東京灣希爾頓酒店.jpg");
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    width: 80%;
+    height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    margin-left: 10%;
+    cursor: pointer;
+}
+#bg-image3 {
+    background-image: url("../img/東京丸之內四季酒店.jpg");
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    width: 80%;
+    height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    margin-left: 10%;
+    cursor: pointer;
+}
+#bg-image4 {
+    background-image: url("../img/東京灣大倉酒店.jpg");
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    width: 80%;
+    height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#clickTicket {
+    text-align: right;
+    font-size: 20px;
+    color: gray;
+}
+#clickTicket2 {
+    text-align: right;
+    font-size: 20px;
+    color: gray;
+}
+#clickTicket3 {
+    text-align: right;
+    font-size: 20px;
+    color: gray;
+}
+#clickTicket4 {
+    text-align: right;
+    font-size: 20px;
+    color: gray;
+}
+#hotalStar, #hotalStar2,
+#hotalStar3, #hotalStar4 {
+    font-size: 1.5em;
+}

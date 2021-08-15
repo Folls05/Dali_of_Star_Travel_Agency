@@ -1,0 +1,196 @@
+#travelBox {
+    display: none;
+}
+
+#ticketBox {
+    display: none;
+}
+
+#planeHotelBox {
+    display: none;
+}
+
+#dateRange {
+    font-size: 23px;
+    font-weight: bold;
+    color: #0D202B;
+}
+
+#travelTaiwan, #ticketTaiwan, #ticketInter {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+#travelInter, #ticketInter {
+    display: none;
+}
+
+#switchTaiwan, #switchTaiwanTicket {
+    background-color: #0D202B;
+    color: #FFD981;
+    border-radius: 100px;
+    position: relative;
+    bottom: -0.5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+#switchInter, #switchInterTicket {
+    cursor: pointer;
+}
+
+.travelTaiwanFrom, .travelTaiwanTo, .travelInterFrom, .travelInterTo, .ticketInterText {
+    font-size: 23px;
+}
+
+.travelTaiwanFrom:focus, .travelTaiwanTo:focus, .travelInterFrom:focus, .travelInterTo:focus, .ticketInterText:focus {
+    outline: none;
+}
+
+.travelTaiwanFrom:hover, .travelTaiwanTo:hover, .travelInterFrom:hover, .travelInterTo:hover, .ticketInterText:hover {
+    background-color: rgba(13, 32, 43, 0.123);
+}
+
+#areaDownBoxTravelTaiwanFrom, #areaDownBoxTravelTaiwanTo, #areaDownBoxTravelInterFrom, #areaDownBoxTravelInterTo{
+    position: absolute;
+    left: 1%;
+    top: 80%;
+    border: 1px solid #0D202B;
+    width: 55%;
+    background-color: white;
+    color: #0D202B;
+    text-align: 50px;
+    font-size: 20px;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    z-index: 50;
+    display: none;
+}
+
+#areaDownBoxTicketInterText{
+    position: absolute;
+    left: 3%;
+    top: 97%;
+    border: 1px solid #0D202B;
+    width: 55%;
+    background-color: white;
+    color: #0D202B;
+    text-align: 50px;
+    font-size: 20px;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    z-index: 50;
+    display: none;
+}
+
+#areaDownBoxPlaneHotelTo{
+    position: absolute;
+    left: 1%;
+    top: 80%;
+    border: 1px solid #0D202B;
+    width: 55%;
+    background-color: white;
+    color: #0D202B;
+    text-align: 50px;
+    font-size: 20px;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    z-index: 50;
+    display: none;
+}
+
+#hotTravel, #hotTravelTo, #taiwanAirport3, #hotForeign2 {
+    display: block;
+}
+
+.ticketText, .planeHotelText {
+    height: auto;
+}
+
+.ticketText>button {
+    background-color: white;
+    color: #0D202B;
+    border: none;
+    height: 55px;
+    text-align: left;
+    width: 30%;
+}
+
+.ticketText>label, .ticketText>select {
+    background-color: white;
+    color: #0D202B;
+    border: none;
+    height: 55px;
+    text-align: left;
+    width: 20%;
+    margin-left: 20px;
+}
+
+.planeHotelText>label, .planeHotelText>select {
+    background-color: white;
+    color: #0D202B;
+    border: none;
+    height: 55px;
+    text-align: left;
+    width: 10%;
+}
+
+.ticketText>input {
+    background-color: white;
+    color: #0D202B;
+    border: none;
+    height: 55px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.ticketText>label, .planeHotelText>label {
+    font-weight: bold;
+}
+
+.ticketSelectType {
+    border-left: 1px solid rgba(13, 32, 43, 0.3);
+    font-size: 30px;
+}
+
+#ticketClass, #ticketType {
+    font-size: 15px;
+    border: rgba(13, 32, 43, 0.123);
+    cursor: pointer;
+}
+
+.ticketInterItem {
+    height: 60px;
+    width: 99%;
+    font-size: 20px;
+}
+
+.planeHotelTo {
+    width: 15%;
+}
+/* !!!! */
+.planeHotelPeopleDownBox {
+    position:absolute;
+    right: 18.1%;
+    border: 1px solid #0D202B;
+    width: 20%;
+    height: 200px;
+    background-color:white ;
+    color: #0D202B;
+    text-align: 50px;
+    font-size: 20px;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: none;
+    z-index: 50;
+}
+
+.planeHotelPeopleText {
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.planeHotelPeopleText:focus {
+    outline: none
+}
