@@ -1,0 +1,3291 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大里之星旅行社 | Travel of Dali Star</title>
+    <link rel="stylesheet" href="./css/Header.css?">
+    <link rel="icon" href="./img/icon_Star.png">
+    <link rel="stylesheet" href="./css/TopImage.css?">
+    <link rel="stylesheet" href="./css/Searching.css?">
+    <link rel="stylesheet" href="./css/Flight.css?">
+    <link rel="stylesheet" href="./css/Travel and Ticket.css?">
+    <link rel="stylesheet" href="./css/Below.css?">
+    <script type="text/javascript" src="./js/jquery-3.6.0.js?"></script>
+    <script type="text/javascript" src="./js/LatterJS.js?"></script>
+    <script type="text/javascript" src="./js/TravelDaliStar.js?"></script>
+</head>
+
+<body>
+    <!-- 標題 -->
+    <header>
+        <div>
+            <a href="./index.html">
+                <div id="starLogoPicture">
+                    <img id="starLogo" src="./img/starLogo.png">
+                </div>
+            </a>
+        </div>
+        <div id="topTitleid">
+            <div class="topTitle" id="apartmentHover">
+                住宿
+                <div id="apartment">
+                    <div class="topSubTitle">
+                        <div class="titleEachItem">台灣住宿</div>
+                        <div class="titleEachItem">外國住宿</div>
+                        <div class="titleEachItem">機+酒</div>
+                        <div class="titleEachItem">✓ 刊登房源</div>
+                    </div>
+                </div>
+            </div>
+            <div class="topTitle" id="ticketHover">
+                機票
+                <div id="ticket">
+                    <div class="titleEachItem">國際機票</div>
+                    <div class="titleEachItem">國內機票</div>
+                    <div class="titleEachItem">機+酒</div>
+                    <div class="titleEachItem">護照、簽證</div>
+                </div>
+            </div>
+            <div class="topTitle" id="taiwanHover">
+                台灣
+                <div id="taiwan">
+                    <div class="titleEachItem">國內旅遊</div>
+                    <div class="titleEachItem">環島之旅</div>
+                    <div class="titleEachItem">巴士旅遊</div>
+                    <div class="titleEachItem">高鐵旅遊</div>
+                    <div class="titleEachItem">機+酒</div>
+                </div>
+            </div>
+            <div class="topTitle" id="worldHover">
+                世界
+                <div id="world">
+                    <div class="titleEachItem">台灣住宿</div>
+                    <div class="titleEachItem">外國住宿</div>
+                    <div class="titleEachItem">機+酒</div>
+                    <div class="titleEachItem">刊登房源</div>
+                </div>
+            </div>
+            <div class="topTitle" id="entertainmentHover">
+                玩樂
+                <div id="entertainment">
+                    <div class="titleEachItem">國外票劵</div>
+                    <div class="titleEachItem">國內票券</div>
+                    <div class="titleEachItem">人氣餐券</div>
+                    <div class="titleEachItem">租車、包車</div>
+                    <div class="titleEachItem">WiFi、網卡</div>
+                    <div class="titleEachItem">旅遊保險</div>
+                </div>
+            </div>
+            <div class="topTitle" id="cruiseHover">
+                遊輪
+                <div id="cruise">
+                    <div class="titleEachItem">郵輪旅遊</div>
+                    <div class="titleEachItem">全球郵輪</div>
+                    <div class="titleEachItem">星夢郵輪</div>
+                    <div class="titleEachItem">公主遊輪</div>
+                </div>
+            </div>
+            <div id="topTitleLeftid">
+                <div class="topTitleLeft">客製旅遊</div>
+                <div id="social" class="topTitleLeft">
+                    本社社群▾
+                    <div id="socialList">
+                        <div class="socialListEachItem">
+                            <img src="./img/icon/line_icon.png">&ensp;Line @@
+                        </div>
+                        <div class="socialListEachItem">
+                            <img src="./img/icon/fb_icon.png">&ensp;Facebook
+                        </div>
+                        <div class="socialListEachItem">
+                            <img src="./img/icon/ig_icon.png">&ensp;Instagram
+                        </div>
+                        <div class="socialListEachItem">
+                            <img src="./img/icon/twitter_icon.png">&ensp;Twitter
+                        </div>
+                        <div class="socialListEachItem">
+                            <img src="./img/icon/youtube_icon.png">&ensp;Youtube
+                        </div>
+                    </div>
+                </div>
+                <div id="order" class="topTitleLeft">
+                    查詢訂單▾
+                    <div id="orderList">
+                        <div class="topTitleLeftEachItem">會員訂單</div>
+                        <div class="topTitleLeftEachItem">訪客訂單</div>
+                        <div class="topTitleLeftEachItem">其他訂單</div>
+                        <div class="topTitleLeftEachItem">折扣碼相關</div>
+                    </div>
+                </div>
+                <div id="memberButton" class="topTitleLeft">
+                    會員資料▾
+                    <div id="memberList">
+                        <div class="topTitleLeftEachItem">會員首頁</div>
+                        <div class="topTitleLeftEachItem">訂單查詢</div>
+                        <div class="topTitleLeftEachItem">管理帳戶</div>
+                        <div class="topTitleLeftEachItem">商品收藏</div>
+                        <div class="topTitleLeftEachItem">星點數查詢</div>
+                        <div class="topTitleLeftEachItem">折扣碼查詢</div>
+                        <div class="topTitleLeftEachItem">會員評鑑</div>
+                    </div>
+                </div>
+            </div>
+            <div id="topMemberid">
+                <button id="memberLogin">登入</button>
+                <span id="memberSignUp">註冊</span>
+            </div>
+        </div>
+    </header>
+    <!-- 圖片跑馬燈 -->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="./img/island.png" style="width:100%">
+            <div class="text">
+                <p class="textFirst">今年我們相約去離島 猶如出國</p>
+                <p class="textSecond">超值優惠價 4-5月額滿感謝。&emsp;&emsp;6月報名中，確認入住各五、四星級飯店</p>
+            </div>
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./img/Hualian.png" style="width:100%">
+            <div class="text">
+                <p class="textFirst">花東．玉山直升機圓夢</p>
+                <p class="textSecond">景仰百岳之王．都蘭部落．啤酒私釀DIY．5星飯店</p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./img/Taitung.png" style="width:100%">
+            <div class="text">
+                <p class="textFirst">台東．山海人文祕境</p>
+                <p class="textSecond">台11線藍色公路．都蘭部落．國本農場閩日建築</p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./img/Palau.png" style="width:100%">
+            <div class="text">
+                <p class="textFirst">帛琉旅遊泡泡！準備好了嗎？</p>
+                <p class="textSecond">台灣與帛琉準備好了 高品質及安全的旅遊 讓你重溫海外旅遊</p>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">
+            <p class="changePage">&#10094;</p>
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+            <p class="changePage">&#10095;</p>
+        </a>
+    </div>
+    <div id="bottomButton" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!-- 搜尋日期 -->
+    <div id="search">
+        <div id="searchTitle">
+            <div class="searchTitle active" onclick="changeTitle(event, 'hotelBox')">訂房</div>
+            <div class="searchTitle" onclick="changeTitle(event, 'flightBox')">機票</div>
+            <div class="searchTitle" onclick="changeTitle(event, 'travelBox')">旅遊</div>
+            <div class="searchTitle" onclick="changeTitle(event, 'ticketBox')">票劵</div>
+            <div class="searchTitle" onclick="changeTitle(event, 'planeHotelBox')">機+酒</div>
+        </div>
+        <!-- 訂房 -->
+        <div class="searchEachBox" id="hotelBox">
+            <div id="switchArea" class="orderEachLine">
+                <span id="switchAreaTaiwan" onclick="switchCountry('inputAreaTaiwan')">台灣</span>
+                <span id="switchAreaForeign" onclick="switchCountry('inputAreaForeign')">國外</span>
+            </div>
+            <!-- 訂房國內 -->
+            <div id="inputAreaTaiwan" class="orderEachLine">
+                <div class="inputFrontBox">
+                    <span class="flightEachItemSpan">
+                        <input class="inputEachItem inputText" type="text" placeholder="輸入城市/區域/飯店">
+                        <div id="areaDownBox">
+                            <div class="areaTitle">
+                                <div class="areaName" id="firsthot" onclick="changeArea(event, 'hot')">熱門</div>
+                                <div class="areaName" onclick="changeArea(event, 'taipei')">台北市</div>
+                                <div class="areaName" onclick="changeArea(event, 'newTaipei')">基隆新北</div>
+                                <div class="areaName" onclick="changeArea(event, 'taoyuan')">桃竹苗</div>
+                                <div class="areaName" onclick="changeArea(event, 'taichung')">中彰投</div>
+                                <div class="areaName" onclick="changeArea(event, 'tainan')">雲嘉南</div>
+                                <div class="areaName" onclick="changeArea(event, 'kaoshung')">高屏</div>
+                                <div class="areaName" onclick="changeArea(event, 'taitung')">宜花東離島</div>
+                            </div>
+                            <!-- 熱門 -->
+                            <div class="areaContent" id="hot">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北</div>
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">嘉義市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">嘉義縣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">新竹市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">宜蘭</div>
+                                    <div class="eachArea">墾丁</div>
+                                    <div class="eachArea">新竹縣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南投</div>
+                                    <div class="eachArea">新北市</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                            </div>
+                            <!-- 台北市 -->
+                            <div class="areaContent" id="taipei">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北</div>
+                                    <div class="eachArea">北投區</div>
+                                    <div class="eachArea">內湖區</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">中山區</div>
+                                    <div class="eachArea">松山區</div>
+                                    <div class="eachArea">南港區</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">中正區</div>
+                                    <div class="eachArea">大安區</div>
+                                    <div class="eachArea">西門町</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">士林區</div>
+                                    <div class="eachArea">大同區</div>
+                                    <div class="eachArea">台北車站</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">萬華區</div>
+                                    <div class="eachArea">信義區</div>
+                                    <div class="eachArea">北投溫泉</div>
+                                </div>
+                            </div>
+                            <!-- 新北基隆 -->
+                            <div class="areaContent" id="newTaipei">
+                                <div class="areaBox">
+                                    <div class="eachArea">基隆</div>
+                                    <div class="eachArea">淡水老街</div>
+                                    <div class="eachArea">板橋車站</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新北市</div>
+                                    <div class="eachArea">中和區</div>
+                                    <div class="eachArea">九份老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">板橋區</div>
+                                    <div class="eachArea">三重區</div>
+                                    <div class="eachArea">烏來老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新店屈</div>
+                                    <div class="eachArea">永和區</div>
+                                    <div class="eachArea">金山老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">淡水區</div>
+                                    <div class="eachArea">貢寮區</div>
+                                    <div class="eachArea">福隆海域</div>
+                                </div>
+                            </div>
+                            <!-- 桃園新竹 -->
+                            <div class="areaContent" id="taoyuan">
+                                <div class="areaBox">
+                                    <div class="eachArea">桃園</div>
+                                    <div class="eachArea">大湖鄉</div>
+                                    <div class="eachArea">小人國</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新竹縣</div>
+                                    <div class="eachArea">桃園車站</div>
+                                    <div class="eachArea">新竹城隍廟</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新竹市</div>
+                                    <div class="eachArea">中壢車站</div>
+                                    <div class="eachArea">青草湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">苗栗國</div>
+                                    <div class="eachArea">桃園機場</div>
+                                    <div class="eachArea">泰安溫泉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南庄鄉</div>
+                                    <div class="eachArea">新竹車站</div>
+                                    <div class="eachArea">三義</div>
+                                </div>
+
+                            </div>
+                            <!-- 台中南投 -->
+                            <div class="areaContent" id="taichung">
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">集集</div>
+                                    <div class="eachArea">日月潭</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">彰化</div>
+                                    <div class="eachArea">台中車站</div>
+                                    <div class="eachArea">水社</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南投</div>
+                                    <div class="eachArea">逢甲夜市</div>
+                                    <div class="eachArea">九族文化村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">埔里</div>
+                                    <div class="eachArea">綠園草衙道</div>
+                                    <div class="eachArea">溪頭妖怪村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">員林</div>
+                                    <div class="eachArea">清境農場</div>
+                                    <div class="eachArea">鹿港</div>
+                                </div>
+                            </div>
+                            <!-- 台南 -->
+                            <div class="areaContent" id="tainan">
+                                <div class="areaBox">
+                                    <div class="eachArea">雲林</div>
+                                    <div class="eachArea">嘉義車站</div>
+                                    <div class="eachArea">海安路藝術街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">嘉義縣</div>
+                                    <div class="eachArea">阿里山</div>
+                                    <div class="eachArea">林百貨</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">嘉義市</div>
+                                    <div class="eachArea">赤崁樓</div>
+                                    <div class="eachArea">花園夜市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">孔廟</div>
+                                    <div class="eachArea">溫泉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">安平區</div>
+                                    <div class="eachArea">台南車站</div>
+                                    <div class="eachArea">劍湖山</div>
+                                </div>
+                            </div>
+
+                            <!-- 高屏 -->
+                            <div class="areaContent" id="kaoshung">
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">左營</div>
+                                    <div class="eachArea">中央公園</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">墾丁</div>
+                                    <div class="eachArea">三多五福</div>
+                                    <div class="eachArea">草衙道</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">屏東市</div>
+                                    <div class="eachArea">美麗島站</div>
+                                    <div class="eachArea">南灣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">愛河</div>
+                                    <div class="eachArea">瑞豐夜市</div>
+                                    <div class="eachArea">墾丁大街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄車站</div>
+                                    <div class="eachArea">駁二特區</div>
+                                    <div class="eachArea">小琉球</div>
+                                </div>
+                            </div>
+
+                            <!-- 台東離島 -->
+                            <div class="areaContent" id="taitung">
+                                <div class="areaBox">
+                                    <div class="eachArea">宜蘭</div>
+                                    <div class="eachArea">台東夜市</div>
+                                    <div class="eachArea">東大門夜市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">礁溪溫泉</div>
+                                    <div class="eachArea">太魯閣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">羅東夜市</div>
+                                    <div class="eachArea">池上</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澎湖</div>
+                                    <div class="eachArea">宜蘭車站</div>
+                                    <div class="eachArea">鐵花村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">金門</div>
+                                    <div class="eachArea">花蓮車站</div>
+                                    <div class="eachArea">知本溫泉</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <label class="flightEachItemSpan" for="frontDate"></label>
+                    <input class="inputEachItem dateText frontDate" type="date" id="frontDate">
+                    <span class="leftMark">&rArr;</span>
+                    <label for="latterDate"></label>
+                    <input class="inputEachItem dateText latterDate" type="date" id="latterDate">
+                    <span class="flightEachItemSpan">
+                        <button class="inputEachItem peopleText">
+                            <span>
+                                <span class="roomNumTop" id="roomNumTop">1</span> 間
+                            </span>
+                            <span>
+                                ‧
+                                <span class="peopleNumTop" id="peopleNumTop">1</span> 人
+                            </span>
+                        </button>
+                        <div class="peopleDownBox peopleDownBox">
+                            <div class="downLine">
+                                <span class="downTitle">房間</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton roomMinusButton" id="roomMinusButton">-</span>
+                                    <span class="middleNumber roomNum" id="roomNum">1</span>
+                                    <span class="downButton plusButton roomPlusButton" id="roomPlusButton">+</span>
+                                </div>
+                            </div>
+                            <div class="downLine">
+                                <span class="downTitle">人數</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton peopleMinusButton"
+                                          id="peopleMinusButton">-</span>
+                                    <span class="middleNumber peopleNum" id="peopleNum">1</span>
+                                    <span class="downButton plusButton peoplePlusButton" id="peoplePlusButton">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </span>
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="inputEachItem">搜尋</button>
+                </span>
+                <label class="orderEachLine lastLine">
+                    <input type="checkbox">只查民宿
+                    <span class="checkMark"></span>
+                </label>
+            </div>
+            <!-- 訂房國外 -->
+            <div id="inputAreaForeign" class="orderEachLine orderEachLineForeign">
+                <div class="inputFrontBox">
+                    <span class="flightEachItemSpan">
+                        <input class="inputEachItem inputTextForeign" type="text" placeholder="輸入城市/區域/飯店">
+                        <div id="areaDownBoxForeign">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firsthotForeign"
+                                     onclick="changeArea(event, 'hotForeign')">熱門</div>
+                                <div class="areaName" onclick="changeArea(event, 'northAsia')">東北亞</div>
+                                <div class="areaName" onclick="changeArea(event, 'southAsia')">東南亞</div>
+                                <div class="areaName" onclick="changeArea(event, 'china')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'america')">歐美紐澳</div>
+                            </div>
+                            <!-- 熱門 -->
+                            <div class="areaContent" id="hotForeign">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">香港</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">澳門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">上海</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">倫敦</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">京都</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">巴黎</div>
+                                </div>
+                            </div>
+                            <!-- 東北亞 -->
+                            <div class="areaContent" id="northAsia">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">橫濱</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">釜山</div>
+                                    <div class="eachArea">河口湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">札幌</div>
+                                    <div class="eachArea">輕井澤</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">名古屋</div>
+                                    <div class="eachArea">仙台</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">京都</div>
+                                    <div class="eachArea">函館</div>
+                                    <div class="eachArea">岡山</div>
+                                </div>
+                            </div>
+                            <!-- 東南亞 -->
+                            <div class="areaContent" id="southAsia">
+                                <div class="areaBox">
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">清邁</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                    <div class="eachArea">檳城</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">芭達雅</div>
+                                    <div class="eachArea">宿霧</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">華欣</div>
+                                    <div class="eachArea">河內</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">峴港</div>
+                                    <div class="eachArea">沙巴</div>
+                                    <div class="eachArea">普吉島</div>
+                                </div>
+                            </div>
+                            <!-- 港澳大陸 -->
+                            <div class="areaContent" id="china">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐美紐澳 -->
+                            <div class="areaContent" id="america">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">拉斯維加斯</div>
+                                    <div class="eachArea">墨爾本</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">雪梨</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">布里斯本</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">黃金海岸</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <label class="flightEachItemSpan" for="frontDate"></label>
+                    <input class="inputEachItem dateText frontDate" type="date" id="frontDate">
+                    <span class="leftMark">&rArr;</span>
+                    <label for="latterDate"></label>
+                    <input class="inputEachItem dateText latterDate" type="date" id="latterDate">
+                    <span class="flightEachItemSpan">
+                        <button class="inputEachItem peopleText">
+                            <span>
+                                <span class="roomNumTop" id="roomNumTop">1</span> 間
+                            </span>
+                            <span>
+                                ‧
+                                <span class="peopleNumTop" id="peopleNumTop">1</span> 人
+                            </span>
+                        </button>
+                        <div class="peopleDownBox">
+                            <div class="downLine">
+                                <span class="downTitle">房間</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton roomMinusButton" id="roomMinusButton">-</span>
+                                    <span class="middleNumber roomNum" id="roomNum">1</span>
+                                    <span class="downButton plusButton roomPlusButton" id="roomPlusButton">+</span>
+                                </div>
+                            </div>
+                            <div class="downLine">
+                                <span class="downTitle">人數</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton peopleMinusButton"
+                                          id="peopleMinusButton">-</span>
+                                    <span class="middleNumber peopleNum" id="peopleNum">1</span>
+                                    <span class="downButton plusButton peoplePlusButton" id="peoplePlusButton">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </span>
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="inputEachItem">搜尋</button>
+                </span>
+                <label class="orderEachLine lastLine">
+                    <input type="checkbox">只查民宿
+                    <span class="checkMark"></span>
+                </label>
+            </div>
+        </div>
+        <!-- 機票 -->
+        <div class="searchEachBox" id="flightBox">
+            <div id="switchArea" class="orderEachLine">
+                <span id="switchReturn" onclick="switchWay('flightReturn')">來回</span>
+                <span id="switchDirect" onclick="switchWay('inputAreaForeign')">單程</span>
+            </div>
+            <!-- 機票來回 -->
+            <div id="flightReturn" class="orderEachLine">
+                <div class="inputFrontBox">
+                    <!-- 來回從 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem inputTextFlightFrom" type="text" placeholder="輸入出發地">
+                        <div id="areaDownBoxFlightFrom">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstTaiwanAirport"
+                                     onclick="changeArea(event, 'taiwanAirport')">台灣</div>
+                                <div class="areaName" onclick="changeArea(event, 'chinaAirport')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'asiaAirport')">亞洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'americaAirport')">美洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'euroAirport')">歐澳</div>
+                                <div class="areaName" onclick="changeArea(event, 'otherAirport')">其他</div>
+                            </div>
+                            <!-- 台灣 -->
+                            <div class="areaContent" id="taiwanAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(任何)</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">金門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(松山)</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">馬祖南</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">嘉義水上</div>
+                                    <div class="eachArea">馬祖北</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">小三通</div>
+                                </div>
+                            </div>
+                            <!-- 港澳 -->
+                            <div class="areaContent" id="chinaAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+                            </div>
+                            <!-- 亞洲 -->
+                            <div class="areaContent" id="asiaAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">釜山</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">札幌</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">名古屋</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">雅加達</div>
+                                </div>
+                            </div>
+                            <!-- 美洲 -->
+                            <div class="areaContent" id="americaAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">休士頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">芝加哥</div>
+                                    <div class="eachArea">華盛頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">舊金山</div>
+                                    <div class="eachArea">多倫多</div>
+                                    <div class="eachArea">聖保羅</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">加州安大略</div>
+                                    <div class="eachArea">利馬</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">西雅圖</div>
+                                    <div class="eachArea">波士頓</div>
+                                    <div class="eachArea">墨西哥市</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐洲澳洲 -->
+                            <div class="areaContent" id="euroAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">布里斯本</div>
+                                    <div class="eachArea">布拉格</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                    <div class="eachArea">馬德里</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">阿姆斯特丹</div>
+                                    <div class="eachArea">墨爾本</div>
+                                    <div class="eachArea">蘇黎士</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">關島</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">雪梨</div>
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">帛琉</div>
+                                </div>
+                            </div>
+                            <!-- 其他 -->
+                            <div class="areaContent" id="otherAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">伊斯坦堡</div>
+                                    <div class="eachArea">加德滿都</div>
+                                    <div class="eachArea">班加羅爾</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">杜拜</div>
+                                    <div class="eachArea">開羅</div>
+                                    <div class="eachArea">孟買</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">馬爾地夫</div>
+                                    <div class="eachArea">可倫坡</div>
+                                    <div class="eachArea">安曼</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新德里</div>
+                                    <div class="eachArea">約翰尼斯堡</div>
+                                    <div class="eachArea">卡薩布蘭卡</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">特拉維夫</div>
+                                    <div class="eachArea">斯里蘭卡</div>
+                                    <div class="eachArea">奈洛比</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="leftMark">&rArr;</span>
+                    <!-- 來回到 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem inputTextFlightTo" type="text" placeholder="輸入目的地">
+                        <div id="areaDownBoxFlightTo">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstTaiwanAirport2"
+                                     onclick="changeArea(event, 'taiwanAirport2')">台灣</div>
+                                <div class="areaName" onclick="changeArea(event, 'chinaAirport2')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'asiaAirport2')">亞洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'americaAirport2')">美洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'euroAirport2')">歐澳</div>
+                                <div class="areaName" onclick="changeArea(event, 'otherAirport2')">其他</div>
+                            </div>
+                            <!-- 熱門 -->
+                            <div class="areaContent" id="taiwanAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(任何)</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">金門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(松山)</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">馬祖南</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">嘉義水上</div>
+                                    <div class="eachArea">馬祖北</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">小三通</div>
+                                </div>
+                            </div>
+                            <!-- 港澳 -->
+                            <div class="areaContent" id="chinaAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+                            </div>
+                            <!-- 亞洲 -->
+                            <div class="areaContent" id="asiaAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">釜山</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">札幌</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">名古屋</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">雅加達</div>
+                                </div>
+                            </div>
+                            <!-- 美洲 -->
+                            <div class="areaContent" id="americaAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">休士頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">芝加哥</div>
+                                    <div class="eachArea">華盛頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">舊金山</div>
+                                    <div class="eachArea">多倫多</div>
+                                    <div class="eachArea">聖保羅</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">加州安大略</div>
+                                    <div class="eachArea">利馬</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">西雅圖</div>
+                                    <div class="eachArea">波士頓</div>
+                                    <div class="eachArea">墨西哥市</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐洲澳洲 -->
+                            <div class="areaContent" id="euroAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">布里斯本</div>
+                                    <div class="eachArea">布拉格</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                    <div class="eachArea">馬德里</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">阿姆斯特丹</div>
+                                    <div class="eachArea">墨爾本</div>
+                                    <div class="eachArea">蘇黎士</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">關島</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">雪梨</div>
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">帛琉</div>
+                                </div>
+                            </div>
+                            <!-- 其他 -->
+                            <div class="areaContent" id="otherAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">伊斯坦堡</div>
+                                    <div class="eachArea">加德滿都</div>
+                                    <div class="eachArea">班加羅爾</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">杜拜</div>
+                                    <div class="eachArea">開羅</div>
+                                    <div class="eachArea">孟買</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">馬爾地夫</div>
+                                    <div class="eachArea">可倫坡</div>
+                                    <div class="eachArea">安曼</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新德里</div>
+                                    <div class="eachArea">約翰尼斯堡</div>
+                                    <div class="eachArea">卡薩布蘭卡</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">特拉維夫</div>
+                                    <div class="eachArea">斯里蘭卡</div>
+                                    <div class="eachArea">奈洛比</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+
+                    <label class="flightEachItemSpan" for="frontDate"></label>
+                    <input class="flightEachItem dateText frontDate" type="date" id="frontDate">
+                    <span class="leftMark">&rArr;</span>
+                    <label for="latterDate"></label>
+                    <input class="flightEachItem dateText latterDate" type="date" id="latterDate">
+                    <span class="flightEachItemSpan">
+                        <button class="flightEachItem peopleText">
+                            <span>
+                                <span class="roomNumTop" id="roomNumTop">1</span> 位成人
+                            </span>
+                            <span>
+                                ‧
+                                <span class="peopleNumTop" id="peopleNumTop">1</span> 位孩童
+                            </span>
+                        </button>
+                        <div class="peopleDownBox peopleDownBox">
+                            <div class="downLine">
+                                <span class="downTitle">成人</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton roomMinusButton" id="roomMinusButton">-</span>
+                                    <span class="middleNumber roomNum" id="roomNum">1</span>
+                                    <span class="downButton plusButton roomPlusButton" id="roomPlusButton">+</span>
+                                </div>
+                            </div>
+                            <div class="downLine">
+                                <span class="downTitle">孩童</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton peopleMinusButton"
+                                          id="peopleMinusButton">-</span>
+                                    <span class="middleNumber peopleNum" id="peopleNum">1</span>
+                                    <span class="downButton plusButton peoplePlusButton" id="peoplePlusButton">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </span>
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="flightEachItem">搜尋</button>
+                </span>
+                <label class="orderEachLine lastLine">
+                    <input type="checkbox">直飛航班
+                    <span class="checkMark"></span>
+                </label>
+                <label for="flightClass" style="font-size: 20px;">艙等偏好 ：</label>
+                <select name="flightClassLevel" id="flightClass">
+                    <option value="notLimite">艙等不限</option>
+                    <option value="Economy">經濟艙</option>
+                    <option value="Elite">豪華經濟艙</option>
+                    <option value="Business">商務艙</option>
+                    <option value="First">頭等艙</option>
+                </select>
+            </div>
+            <!-- 機票單程 -->
+            <div id="flightDirect" class="orderEachLine orderEachLineForeign">
+                <div class="inputFrontBox">
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem flightDirectFrom" type="text" placeholder="輸入出發地">
+                        <div id="areaDownBoxDirectFrom">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstTaiwanAirportDirect"
+                                     onclick="changeArea(event, 'taiwanAirportDirect')">台灣</div>
+                                <div class="areaName" onclick="changeArea(event, 'chinaAirportDirect')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'asiaAirportDirect')">亞洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'americaAirportDirect')">美洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'euroAirportDirect')">歐澳</div>
+                                <div class="areaName" onclick="changeArea(event, 'otherAirportDirect')">其他</div>
+                            </div>
+                            <!-- 台灣 -->
+                            <div class="areaContent" id="taiwanAirportDirect">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(任何)</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">金門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(松山)</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">馬祖南</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">嘉義水上</div>
+                                    <div class="eachArea">馬祖北</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">小三通</div>
+                                </div>
+                            </div>
+                            <!-- 港澳 -->
+                            <div class="areaContent" id="chinaAirportDirect">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+                            </div>
+                            <!-- 亞洲 -->
+                            <div class="areaContent" id="asiaAirportDirect">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">釜山</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">札幌</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">名古屋</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">雅加達</div>
+                                </div>
+                            </div>
+                            <!-- 美洲 -->
+                            <div class="areaContent" id="americaAirportDirect">
+                                <div class="areaBox">
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">休士頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">芝加哥</div>
+                                    <div class="eachArea">華盛頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">舊金山</div>
+                                    <div class="eachArea">多倫多</div>
+                                    <div class="eachArea">聖保羅</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">加州安大略</div>
+                                    <div class="eachArea">利馬</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">西雅圖</div>
+                                    <div class="eachArea">波士頓</div>
+                                    <div class="eachArea">墨西哥市</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐洲澳洲 -->
+                            <div class="areaContent" id="euroAirportDirect">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">布里斯本</div>
+                                    <div class="eachArea">布拉格</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                    <div class="eachArea">馬德里</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">阿姆斯特丹</div>
+                                    <div class="eachArea">墨爾本</div>
+                                    <div class="eachArea">蘇黎士</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">關島</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">雪梨</div>
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">帛琉</div>
+                                </div>
+                            </div>
+                            <!-- 其他 -->
+                            <div class="areaContent" id="otherAirportDirect">
+                                <div class="areaBox">
+                                    <div class="eachArea">伊斯坦堡</div>
+                                    <div class="eachArea">加德滿都</div>
+                                    <div class="eachArea">班加羅爾</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">杜拜</div>
+                                    <div class="eachArea">開羅</div>
+                                    <div class="eachArea">孟買</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">馬爾地夫</div>
+                                    <div class="eachArea">可倫坡</div>
+                                    <div class="eachArea">安曼</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新德里</div>
+                                    <div class="eachArea">約翰尼斯堡</div>
+                                    <div class="eachArea">卡薩布蘭卡</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">特拉維夫</div>
+                                    <div class="eachArea">斯里蘭卡</div>
+                                    <div class="eachArea">奈洛比</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="leftMark">&rArr;</span>
+                    <!-- 來回到 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem flightDirectTo" type="text" placeholder="輸入目的地">
+                        <div id="areaDownBoxDirectTo">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstTaiwanAirportDirect2"
+                                     onclick="changeArea(event, 'taiwanAirportDirect2')">台灣</div>
+                                <div class="areaName" onclick="changeArea(event, 'chinaAirportDirect2')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'asiaAirportDirect2')">亞洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'americaAirportDirect2')">美洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'euroAirportDirect2')">歐澳</div>
+                                <div class="areaName" onclick="changeArea(event, 'otherAirportDirect2')">其他</div>
+                            </div>
+                            <!-- 熱門 -->
+                            <div class="areaContent" id="taiwanAirportDirect2">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(任何)</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">金門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(松山)</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">馬祖南</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">嘉義水上</div>
+                                    <div class="eachArea">馬祖北</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">小三通</div>
+                                </div>
+                            </div>
+                            <!-- 港澳 -->
+                            <div class="areaContent" id="chinaAirportDirect2">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+                            </div>
+                            <!-- 亞洲 -->
+                            <div class="areaContent" id="asiaAirportDirect2">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">釜山</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">札幌</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">名古屋</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">雅加達</div>
+                                </div>
+                            </div>
+                            <!-- 美洲 -->
+                            <div class="areaContent" id="americaAirportDirect2">
+                                <div class="areaBox">
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">休士頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">芝加哥</div>
+                                    <div class="eachArea">華盛頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">舊金山</div>
+                                    <div class="eachArea">多倫多</div>
+                                    <div class="eachArea">聖保羅</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">加州安大略</div>
+                                    <div class="eachArea">利馬</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">西雅圖</div>
+                                    <div class="eachArea">波士頓</div>
+                                    <div class="eachArea">墨西哥市</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐洲澳洲 -->
+                            <div class="areaContent" id="euroAirportDirect2">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">布里斯本</div>
+                                    <div class="eachArea">布拉格</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                    <div class="eachArea">馬德里</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">阿姆斯特丹</div>
+                                    <div class="eachArea">墨爾本</div>
+                                    <div class="eachArea">蘇黎士</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">關島</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">雪梨</div>
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">帛琉</div>
+                                </div>
+                            </div>
+                            <!-- 其他 -->
+                            <div class="areaContent" id="otherAirportDirect2">
+                                <div class="areaBox">
+                                    <div class="eachArea">伊斯坦堡</div>
+                                    <div class="eachArea">加德滿都</div>
+                                    <div class="eachArea">班加羅爾</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">杜拜</div>
+                                    <div class="eachArea">開羅</div>
+                                    <div class="eachArea">孟買</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">馬爾地夫</div>
+                                    <div class="eachArea">可倫坡</div>
+                                    <div class="eachArea">安曼</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新德里</div>
+                                    <div class="eachArea">約翰尼斯堡</div>
+                                    <div class="eachArea">卡薩布蘭卡</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">特拉維夫</div>
+                                    <div class="eachArea">斯里蘭卡</div>
+                                    <div class="eachArea">奈洛比</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+
+
+                    <label for="latterDate"></label>
+                    <input class="flightEachItem dateText latterDate flightDirectDate" type="date" id="latterDate">
+                    <span class="flightEachItemSpan">
+                        <button class="flightEachItem peopleText flightDirectPeople">
+                            <span>
+                                <span class="roomNumTop" id="roomNumTop">1</span> 位成人
+                            </span>
+                            <span>
+                                ‧
+                                <span class="peopleNumTop" id="peopleNumTop">1</span> 位孩童
+                            </span>
+                        </button>
+                        <div class="peopleDownBox peopleDownBox">
+                            <div class="downLine">
+                                <span class="downTitle">成人</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton roomMinusButton" id="roomMinusButton">-</span>
+                                    <span class="middleNumber roomNum" id="roomNum">1</span>
+                                    <span class="downButton plusButton roomPlusButton" id="roomPlusButton">+</span>
+                                </div>
+                            </div>
+                            <div class="downLine">
+                                <span class="downTitle">孩童</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton peopleMinusButton"
+                                          id="peopleMinusButton">-</span>
+                                    <span class="middleNumber peopleNum" id="peopleNum">1</span>
+                                    <span class="downButton plusButton peoplePlusButton" id="peoplePlusButton">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </span>
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="flightEachItem">搜尋</button>
+                </span>
+                <label class="orderEachLine lastLine">
+                    <input type="checkbox">直飛航班
+                    <span class="checkMark"></span>
+                </label>
+                <label for="flightClass" style="font-size: 20px;">艙等偏好 ：</label>
+                <select name="flightClassLevel" id="flightClass">
+                    <option value="notLimite">艙等不限</option>
+                    <option value="Economy">經濟艙</option>
+                    <option value="Elite">豪華經濟艙</option>
+                    <option value="Business">商務艙</option>
+                    <option value="First">頭等艙</option>
+                </select>
+            </div>
+        </div>
+        <!-- 旅遊 -->
+        <div class="searchEachBox" id="travelBox">
+            <div id="switchArea" class="orderEachLine">
+                <span id="switchTaiwan" onclick="switchTravel('travelTaiwan')">台灣</span>
+                <span id="switchInter" onclick="switchTravel('travelInter')">國外</span>
+            </div>
+            <!-- 旅遊國內 -->
+            <div id="travelTaiwan" class="orderEachLine">
+                <div class="inputFrontBox">
+                    <!-- 國內去 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem travelTaiwanFrom" type="text" placeholder="輸入出發地">
+                        <div id="areaDownBoxTravelTaiwanFrom">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstHotTravel"
+                                     onclick="changeArea(event, 'hotTravel')">熱門</div>
+                                <div class="areaName" onclick="changeArea(event, 'taipeiTravel')">台北市</div>
+                                <div class="areaName" onclick="changeArea(event, 'newTaipeiTravel')">基隆新北</div>
+                                <div class="areaName" onclick="changeArea(event, 'taoyuanTravel')">桃竹苗</div>
+                                <div class="areaName" onclick="changeArea(event, 'taichungTravel')">中彰投</div>
+                                <div class="areaName" onclick="changeArea(event, 'tainanTravel')">雲嘉南</div>
+                                <div class="areaName" onclick="changeArea(event, 'kaoshungTravel')">高屏</div>
+                                <div class="areaName" onclick="changeArea(event, 'taitungTravel')">宜花東離島</div>
+                            </div>
+                            <!-- 熱門 -->
+                            <div class="areaContent" id="hotTravel">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北</div>
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">嘉義市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">嘉義縣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">新竹市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">宜蘭</div>
+                                    <div class="eachArea">墾丁</div>
+                                    <div class="eachArea">新竹縣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南投</div>
+                                    <div class="eachArea">新北市</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                            </div>
+                            <!-- 台北市 -->
+                            <div class="areaContent" id="taipeiTravel">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北</div>
+                                    <div class="eachArea">北投區</div>
+                                    <div class="eachArea">內湖區</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">中山區</div>
+                                    <div class="eachArea">松山區</div>
+                                    <div class="eachArea">南港區</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">中正區</div>
+                                    <div class="eachArea">大安區</div>
+                                    <div class="eachArea">西門町</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">士林區</div>
+                                    <div class="eachArea">大同區</div>
+                                    <div class="eachArea">台北車站</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">萬華區</div>
+                                    <div class="eachArea">信義區</div>
+                                    <div class="eachArea">北投溫泉</div>
+                                </div>
+                            </div>
+                            <!-- 新北基隆 -->
+                            <div class="areaContent" id="newTaipeiTravel">
+                                <div class="areaBox">
+                                    <div class="eachArea">基隆</div>
+                                    <div class="eachArea">淡水老街</div>
+                                    <div class="eachArea">板橋車站</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新北市</div>
+                                    <div class="eachArea">中和區</div>
+                                    <div class="eachArea">九份老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">板橋區</div>
+                                    <div class="eachArea">三重區</div>
+                                    <div class="eachArea">烏來老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新店屈</div>
+                                    <div class="eachArea">永和區</div>
+                                    <div class="eachArea">金山老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">淡水區</div>
+                                    <div class="eachArea">貢寮區</div>
+                                    <div class="eachArea">福隆海域</div>
+                                </div>
+                            </div>
+                            <!-- 桃園新竹 -->
+                            <div class="areaContent" id="taoyuanTravel">
+                                <div class="areaBox">
+                                    <div class="eachArea">桃園</div>
+                                    <div class="eachArea">大湖鄉</div>
+                                    <div class="eachArea">小人國</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新竹縣</div>
+                                    <div class="eachArea">桃園車站</div>
+                                    <div class="eachArea">新竹城隍廟</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新竹市</div>
+                                    <div class="eachArea">中壢車站</div>
+                                    <div class="eachArea">青草湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">苗栗國</div>
+                                    <div class="eachArea">桃園機場</div>
+                                    <div class="eachArea">泰安溫泉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南庄鄉</div>
+                                    <div class="eachArea">新竹車站</div>
+                                    <div class="eachArea">三義</div>
+                                </div>
+
+                            </div>
+                            <!-- 台中南投 -->
+                            <div class="areaContent" id="taichungTravel">
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">集集</div>
+                                    <div class="eachArea">日月潭</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">彰化</div>
+                                    <div class="eachArea">台中車站</div>
+                                    <div class="eachArea">水社</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南投</div>
+                                    <div class="eachArea">逢甲夜市</div>
+                                    <div class="eachArea">九族文化村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">埔里</div>
+                                    <div class="eachArea">綠園草衙道</div>
+                                    <div class="eachArea">溪頭妖怪村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">員林</div>
+                                    <div class="eachArea">清境農場</div>
+                                    <div class="eachArea">鹿港</div>
+                                </div>
+                            </div>
+                            <!-- 台南 -->
+                            <div class="areaContent" id="tainanTravel">
+                                <div class="areaBox">
+                                    <div class="eachArea">雲林</div>
+                                    <div class="eachArea">嘉義車站</div>
+                                    <div class="eachArea">海安路藝術街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">嘉義縣</div>
+                                    <div class="eachArea">阿里山</div>
+                                    <div class="eachArea">林百貨</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">嘉義市</div>
+                                    <div class="eachArea">赤崁樓</div>
+                                    <div class="eachArea">花園夜市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">孔廟</div>
+                                    <div class="eachArea">溫泉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">安平區</div>
+                                    <div class="eachArea">台南車站</div>
+                                    <div class="eachArea">劍湖山</div>
+                                </div>
+                            </div>
+
+                            <!-- 高屏 -->
+                            <div class="areaContent" id="kaoshungTravel">
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">左營</div>
+                                    <div class="eachArea">中央公園</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">墾丁</div>
+                                    <div class="eachArea">三多五福</div>
+                                    <div class="eachArea">草衙道</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">屏東市</div>
+                                    <div class="eachArea">美麗島站</div>
+                                    <div class="eachArea">南灣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">愛河</div>
+                                    <div class="eachArea">瑞豐夜市</div>
+                                    <div class="eachArea">墾丁大街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄車站</div>
+                                    <div class="eachArea">駁二特區</div>
+                                    <div class="eachArea">小琉球</div>
+                                </div>
+                            </div>
+
+                            <!-- 台東離島 -->
+                            <div class="areaContent" id="taitungTravel">
+                                <div class="areaBox">
+                                    <div class="eachArea">宜蘭</div>
+                                    <div class="eachArea">台東夜市</div>
+                                    <div class="eachArea">東大門夜市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">礁溪溫泉</div>
+                                    <div class="eachArea">太魯閣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">羅東夜市</div>
+                                    <div class="eachArea">池上</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澎湖</div>
+                                    <div class="eachArea">宜蘭車站</div>
+                                    <div class="eachArea">鐵花村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">金門</div>
+                                    <div class="eachArea">花蓮車站</div>
+                                    <div class="eachArea">知本溫泉</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="leftMark">&rArr;</span>
+                    <!-- 國內到 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem travelTaiwanTo" type="text" placeholder="輸入目的地">
+                        <div id="areaDownBoxTravelTaiwanTo">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstHotTravelTo"
+                                     onclick="changeArea(event, 'hotTravelTo')">熱門</div>
+                                <div class="areaName" onclick="changeArea(event, 'taipeiTravelTo')">台北市</div>
+                                <div class="areaName" onclick="changeArea(event, 'newTaipeiTravelTo')">基隆新北</div>
+                                <div class="areaName" onclick="changeArea(event, 'taoyuanTravelTo')">桃竹苗</div>
+                                <div class="areaName" onclick="changeArea(event, 'taichungTravelTo')">中彰投</div>
+                                <div class="areaName" onclick="changeArea(event, 'tainanTravelTo')">雲嘉南</div>
+                                <div class="areaName" onclick="changeArea(event, 'kaoshungTravelTo')">高屏</div>
+                                <div class="areaName" onclick="changeArea(event, 'taitungTravelTo')">宜花東離島</div>
+                            </div>
+                            <!-- 熱門 -->
+                            <div class="areaContent" id="hotTravelTo">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北</div>
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">嘉義市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">嘉義縣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">新竹市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">宜蘭</div>
+                                    <div class="eachArea">墾丁</div>
+                                    <div class="eachArea">新竹縣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南投</div>
+                                    <div class="eachArea">新北市</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                            </div>
+                            <!-- 台北市 -->
+                            <div class="areaContent" id="taipeiTravelTo">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北</div>
+                                    <div class="eachArea">北投區</div>
+                                    <div class="eachArea">內湖區</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">中山區</div>
+                                    <div class="eachArea">松山區</div>
+                                    <div class="eachArea">南港區</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">中正區</div>
+                                    <div class="eachArea">大安區</div>
+                                    <div class="eachArea">西門町</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">士林區</div>
+                                    <div class="eachArea">大同區</div>
+                                    <div class="eachArea">台北車站</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">萬華區</div>
+                                    <div class="eachArea">信義區</div>
+                                    <div class="eachArea">北投溫泉</div>
+                                </div>
+                            </div>
+                            <!-- 新北基隆 -->
+                            <div class="areaContent" id="newTaipeiTravelTo">
+                                <div class="areaBox">
+                                    <div class="eachArea">基隆</div>
+                                    <div class="eachArea">淡水老街</div>
+                                    <div class="eachArea">板橋車站</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新北市</div>
+                                    <div class="eachArea">中和區</div>
+                                    <div class="eachArea">九份老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">板橋區</div>
+                                    <div class="eachArea">三重區</div>
+                                    <div class="eachArea">烏來老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新店屈</div>
+                                    <div class="eachArea">永和區</div>
+                                    <div class="eachArea">金山老街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">淡水區</div>
+                                    <div class="eachArea">貢寮區</div>
+                                    <div class="eachArea">福隆海域</div>
+                                </div>
+                            </div>
+                            <!-- 桃園新竹 -->
+                            <div class="areaContent" id="taoyuanTravelTo">
+                                <div class="areaBox">
+                                    <div class="eachArea">桃園</div>
+                                    <div class="eachArea">大湖鄉</div>
+                                    <div class="eachArea">小人國</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新竹縣</div>
+                                    <div class="eachArea">桃園車站</div>
+                                    <div class="eachArea">新竹城隍廟</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新竹市</div>
+                                    <div class="eachArea">中壢車站</div>
+                                    <div class="eachArea">青草湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">苗栗國</div>
+                                    <div class="eachArea">桃園機場</div>
+                                    <div class="eachArea">泰安溫泉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南庄鄉</div>
+                                    <div class="eachArea">新竹車站</div>
+                                    <div class="eachArea">三義</div>
+                                </div>
+
+                            </div>
+                            <!-- 台中南投 -->
+                            <div class="areaContent" id="taichungTravelTo">
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">集集</div>
+                                    <div class="eachArea">日月潭</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">彰化</div>
+                                    <div class="eachArea">台中車站</div>
+                                    <div class="eachArea">水社</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">南投</div>
+                                    <div class="eachArea">逢甲夜市</div>
+                                    <div class="eachArea">九族文化村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">埔里</div>
+                                    <div class="eachArea">綠園草衙道</div>
+                                    <div class="eachArea">溪頭妖怪村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">員林</div>
+                                    <div class="eachArea">清境農場</div>
+                                    <div class="eachArea">鹿港</div>
+                                </div>
+                            </div>
+                            <!-- 台南 -->
+                            <div class="areaContent" id="tainanTravelTo">
+                                <div class="areaBox">
+                                    <div class="eachArea">雲林</div>
+                                    <div class="eachArea">嘉義車站</div>
+                                    <div class="eachArea">海安路藝術街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">嘉義縣</div>
+                                    <div class="eachArea">阿里山</div>
+                                    <div class="eachArea">林百貨</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">嘉義市</div>
+                                    <div class="eachArea">赤崁樓</div>
+                                    <div class="eachArea">花園夜市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">孔廟</div>
+                                    <div class="eachArea">溫泉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">安平區</div>
+                                    <div class="eachArea">台南車站</div>
+                                    <div class="eachArea">劍湖山</div>
+                                </div>
+                            </div>
+
+                            <!-- 高屏 -->
+                            <div class="areaContent" id="kaoshungTravelTo">
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">左營</div>
+                                    <div class="eachArea">中央公園</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">墾丁</div>
+                                    <div class="eachArea">三多五福</div>
+                                    <div class="eachArea">草衙道</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">屏東市</div>
+                                    <div class="eachArea">美麗島站</div>
+                                    <div class="eachArea">南灣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">愛河</div>
+                                    <div class="eachArea">瑞豐夜市</div>
+                                    <div class="eachArea">墾丁大街</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄車站</div>
+                                    <div class="eachArea">駁二特區</div>
+                                    <div class="eachArea">小琉球</div>
+                                </div>
+                            </div>
+
+                            <!-- 台東離島 -->
+                            <div class="areaContent" id="taitungTravelTo">
+                                <div class="areaBox">
+                                    <div class="eachArea">宜蘭</div>
+                                    <div class="eachArea">台東夜市</div>
+                                    <div class="eachArea">東大門夜市</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">礁溪溫泉</div>
+                                    <div class="eachArea">太魯閣</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">羅東夜市</div>
+                                    <div class="eachArea">池上</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澎湖</div>
+                                    <div class="eachArea">宜蘭車站</div>
+                                    <div class="eachArea">鐵花村</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">金門</div>
+                                    <div class="eachArea">花蓮車站</div>
+                                    <div class="eachArea">知本溫泉</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="flightEachItemSpan" id="dateRange">出發區間 ：</span>
+                    <label class="flightEachItemSpan" for="frontDate"></label>
+                    <input class="flightEachItem dateText frontDate" type="date" id="frontDate">
+                    <span class="leftMark">&rArr;</span>
+                    <label for="latterDate"></label>
+                    <input class="flightEachItem dateText latterDate" type="date" id="latterDate">
+
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="flightEachItem">搜尋</button>
+                </span>
+                <label class="orderEachLine lastLine">
+                    <input type="checkbox">查看可報名
+                    <span class="checkMark"></span>
+                </label>
+
+            </div>
+            <!-- 旅遊國外 -->
+            <div id="travelInter" class="orderEachLine orderEachLineForeign">
+                <div class="inputFrontBox">
+                    <!-- 國外去 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem travelInterFrom" type="text" placeholder="輸入出發地">
+                        <div id="areaDownBoxTravelInterFrom">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstTaiwanAirport3"
+                                     onclick="changeArea(event, 'taiwanAirport3')">台灣</div>
+                            </div>
+                            <!-- 台灣 -->
+                            <div class="areaContent" id="taiwanAirport3">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(任何)</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">金門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(松山)</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">馬祖南</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">嘉義水上</div>
+                                    <div class="eachArea">馬祖北</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="leftMark">&rArr;</span>
+                    <!-- 國外到 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem travelInterTo" type="text" placeholder="輸入目的地">
+                        <div id="areaDownBoxTravelInterTo">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstHotForeign2"
+                                     onclick="changeArea(event, 'hotForeign2')">熱門</div>
+                                <div class="areaName" onclick="changeArea(event, 'northAsia2')">東北亞</div>
+                                <div class="areaName" onclick="changeArea(event, 'southAsia2')">東南亞</div>
+                                <div class="areaName" onclick="changeArea(event, 'china2')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'america2')">歐美紐澳</div>
+                            </div>
+                            <!-- 熱門 -->
+                            <div class="areaContent" id="hotForeign2">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">香港</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">澳門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">上海</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">倫敦</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">京都</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">巴黎</div>
+                                </div>
+                            </div>
+                            <!-- 東北亞 -->
+                            <div class="areaContent" id="northAsia2">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">橫濱</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">釜山</div>
+                                    <div class="eachArea">河口湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">札幌</div>
+                                    <div class="eachArea">輕井澤</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">名古屋</div>
+                                    <div class="eachArea">仙台</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">京都</div>
+                                    <div class="eachArea">函館</div>
+                                    <div class="eachArea">岡山</div>
+                                </div>
+                            </div>
+                            <!-- 東南亞 -->
+                            <div class="areaContent" id="southAsia2">
+                                <div class="areaBox">
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">清邁</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                    <div class="eachArea">檳城</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">芭達雅</div>
+                                    <div class="eachArea">宿霧</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">華欣</div>
+                                    <div class="eachArea">河內</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">峴港</div>
+                                    <div class="eachArea">沙巴</div>
+                                    <div class="eachArea">普吉島</div>
+                                </div>
+                            </div>
+                            <!-- 港澳大陸 -->
+                            <div class="areaContent" id="china2">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐美紐澳 -->
+                            <div class="areaContent" id="america2">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">拉斯維加斯</div>
+                                    <div class="eachArea">墨爾本</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">雪梨</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">布里斯本</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">黃金海岸</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="flightEachItemSpan" id="dateRange">出發區間 ：</span>
+                    <label class="flightEachItemSpan" for="frontDate"></label>
+                    <input class="flightEachItem dateText frontDate" type="date" id="frontDate">
+                    <span class="leftMark">&rArr;</span>
+                    <label for="latterDate"></label>
+                    <input class="flightEachItem dateText latterDate" type="date" id="latterDate">
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="flightEachItem">搜尋</button>
+                </span>
+                <label class="orderEachLine lastLine">
+                    <input type="checkbox">查看可報名
+                    <span class="checkMark"></span>
+                </label>
+            </div>
+        </div>
+        <!-- 票卷 -->
+        <div class="searchEachBox" id="ticketBox">
+            <div id="switchArea" class="orderEachLine">
+                <span id="switchTaiwanTicket" onclick="switchTicket('ticketTaiwan')">台灣</span>
+                <span id="switchInterTicket" onclick="switchTicket('ticketInter')">國外</span>
+            </div>
+            <!-- 票國內 -->
+            <div id="ticketTaiwan" class="orderEachLine">
+                <div class="inputFrontBox">
+                    <span class="ticketText">
+                        <label for="ticketClass" style="font-size: 20px;">地區 ：</label>
+                        <select name="flightClassLevel" id="ticketClass" class="ticketSelect">
+                            <option value="notLimite">不限地區</option>
+                            <option value="1">基隆</option>
+                            <option value="2">台北</option>
+                            <option value="3">桃園</option>
+                            <option value="4">新竹</option>
+                            <option value="5">苗栗</option>
+                            <option value="6">台中</option>
+                            <option value="7">彰化</option>
+                            <option value="8">南投</option>
+                            <option value="9">雲林</option>
+                            <option value="10">嘉義</option>
+                            <option value="11">台南</option>
+                            <option value="12">高雄</option>
+                            <option value="13">屏東</option>
+                            <option value="14">宜蘭</option>
+                            <option value="15">花蓮</option>
+                            <option value="16">台東</option>
+                            <option value="17">澎湖</option>
+                            <option value="18">其他離島</option>
+                        </select>
+                    </span>
+                    <span class="ticketText ticketSelectType">
+                        <label for="ticketType" style="font-size: 20px;">票卷種類 ：</label>
+                        <select name="flightClassLevel" id="ticketType" class="ticketSelect">
+                            <option value="notLimite">不限種類</option>
+                            <option value="A1">美食餐卷</option>
+                            <option value="A2">門票展演</option>
+                            <option value="A3">體驗活動</option>
+                            <option value="A4">手作課程</option>
+                            <option value="A5">一日遊</option>
+                            <option value="A6">溫泉泡湯</option>
+                            <option value="A7">交通接送</option>
+                            <option value="A8">住宿休憩</option>
+                            <option value="A9">美容雕塑</option>
+                        </select>
+                    </span>
+                    <span class="ticketText ticketSelectType">
+                        <input class="flightEachItem travelTaiwanTo" type="text" placeholder="輸入票卷關鍵字">
+                    </span>
+                </div>
+                <span class="ticketText" id="searchButtonSpan">
+                    <button id="searchButton" class="flightEachItem">搜尋</button>
+                </span>
+
+            </div>
+            <!-- 票國外 -->
+            <div id="ticketInter" class="orderEachLine orderEachLineForeign">
+                <div class="inputFrontBox">
+                    <!-- 國外去 -->
+                    <span class="flightEachItemSpan">
+                        <input class="ticketInterItem ticketInterText" type="text" placeholder="輸入國家/城市/行程關鍵字">
+                        <div id="areaDownBoxTicketInterText">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstHotTopic" onclick="changeArea(event, 'hotTopic')">
+                                    熱搜主題
+                                </div>
+                                <div class="areaName" onclick="changeArea(event, 'japanKorea')">日韓</div>
+                                <div class="areaName" onclick="changeArea(event, 'Hongkong')">中港澳</div>
+                                <div class="areaName" onclick="changeArea(event, 'islandAsia')">東南亞·島嶼</div>
+                                <div class="areaName" onclick="changeArea(event, 'euroMidAsia')">歐洲中亞</div>
+                                <div class="areaName" onclick="changeArea(event, 'americaAus')">美加·紐澳</div>
+                            </div>
+                            <!-- 熱搜主題 -->
+                            <div class="areaContent" id="hotTopic">
+                                <div class="areaBox">
+                                    <div class="eachArea">環球影城</div>
+                                    <div class="eachArea">美國當地餐團</div>
+                                    <div class="eachArea">大阪周遊卡</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">水舞間</div>
+                                    <div class="eachArea">旅遊塔</div>
+                                    <div class="eachArea">巨石陣巴斯</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">東京迪士尼</div>
+                                    <div class="eachArea">晴空塔</div>
+                                    <div class="eachArea">黃金海岸</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">歐洲火車通票</div>
+                                    <div class="eachArea">倫敦眼</div>
+                                    <div class="eachArea">大堡礁</div>
+                                </div>
+                            </div>
+                            <!-- 日韓 -->
+                            <div class="areaContent" id="japanKorea">
+                                <div class="areaBox">
+                                    <div class="eachArea">環球影城</div>
+                                    <div class="eachArea">南海電鐵</div>
+                                    <div class="eachArea">東京</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">關西周遊卡</div>
+                                    <div class="eachArea">大阪周遊卡</div>
+                                    <div class="eachArea">大阪</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">東京迪士尼</div>
+                                    <div class="eachArea">晴空塔</div>
+                                    <div class="eachArea">京都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">富士山</div>
+                                    <div class="eachArea">利木津</div>
+                                    <div class="eachArea">沖繩</div>
+                                </div>
+                            </div>
+                            <!-- 中港澳 -->
+                            <div class="areaContent" id="Hongkong">
+                                <div class="areaBox">
+                                    <div class="eachArea">水舞間</div>
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">西安</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">旅遊塔</div>
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">機場快線</div>
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">武漢</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">長隆海洋</div>
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">廈門</div>
+                                </div>
+                            </div>
+                            <!-- 亞洲 -->
+                            <div class="areaContent" id="islandAsia">
+                                <div class="areaBox">
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">越南</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">芭達雅</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">柬埔寨</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">普吉島</div>
+                                    <div class="eachArea">沙巴·亞庇</div>
+                                    <div class="eachArea">蘇梅島</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">宿霧</div>
+                                    <div class="eachArea">關島</div>
+                                </div>
+                            </div>
+                            <!-- 美洲 -->
+                            <div class="areaContent" id="euroMidAsia">
+                                <div class="areaBox">
+                                    <div class="eachArea">聖米歇爾山</div>
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">杜拜</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巨石陣巴斯</div>
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">維也納</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦眼</div>
+                                    <div class="eachArea">巴塞隆納</div>
+                                    <div class="eachArea">德國</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">歐洲火車通票</div>
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">希臘</div>
+                                </div>
+                            </div>
+                            <!-- 歐洲澳洲 -->
+                            <div class="areaContent" id="americaAus">
+                                <div class="areaBox">
+                                    <div class="eachArea">懷托摩螢火蟲</div>
+                                    <div class="eachArea">雪梨</div>
+                                    <div class="eachArea">紐約</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大堡礁</div>
+                                    <div class="eachArea">墨爾本</div>
+                                    <div class="eachArea">洛杉磯</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">美國當地參團</div>
+                                    <div class="eachArea">黃金海岸</div>
+                                    <div class="eachArea">舊金山</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">羚羊峽谷</div>
+                                    <div class="eachArea">紐西蘭</div>
+                                    <div class="eachArea">夏威夷</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="flightEachItem">搜尋</button>
+                </span>
+            </div>
+        </div>
+        <!-- 機+酒 -->
+        <div class="searchEachBox" id="planeHotelBox">
+            <!-- 訂房國內 -->
+            <div id="flightReturn" class="orderEachLine">
+                <div class="inputFrontBox">
+                    <!-- 來回從 -->
+                    <span class="planeHotelText">
+                        <label for="ticketClass" style="font-size: 20px;">台灣出發 ：</label>
+                        <select name="flightClassLevel" id="ticketClass" class="ticketSelect">
+                            <option value="notLimite">不限地區</option>
+                            <option value="1">基隆</option>
+                            <option value="2">台北</option>
+                            <option value="3">桃園</option>
+                            <option value="4">新竹</option>
+                            <option value="5">苗栗</option>
+                            <option value="6">台中</option>
+                            <option value="7">彰化</option>
+                            <option value="8">南投</option>
+                            <option value="9">雲林</option>
+                            <option value="10">嘉義</option>
+                            <option value="11">台南</option>
+                            <option value="12">高雄</option>
+                            <option value="13">屏東</option>
+                            <option value="14">宜蘭</option>
+                            <option value="15">花蓮</option>
+                            <option value="16">台東</option>
+                            <option value="17">澎湖</option>
+                            <option value="18">其他離島</option>
+                        </select>
+                    </span>
+                    <span class="leftMark">&rArr;</span>
+                    <!-- 來回到 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem planeHotelTo" type="text" placeholder="輸入目的地">
+                        <div id="areaDownBoxPlaneHotelTo">
+                            <div class="areaTitle">
+                                <div class="areaName active" id="firstChinaHotel"
+                                     onclick="changeArea(event, 'chinaHotel')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'asiaHotel')">亞洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'americaHotel')">美洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'euroHotel')">歐澳</div>
+                                <div class="areaName" onclick="changeArea(event, 'otherHotel')">其他</div>
+                            </div>
+                            <!-- 港澳 -->
+                            <div class="areaContent" id="chinaHotel">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+                            </div>
+                            <!-- 亞洲 -->
+                            <div class="areaContent" id="asiaHotel">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">釜山</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">札幌</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">名古屋</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">雅加達</div>
+                                </div>
+                            </div>
+                            <!-- 美洲 -->
+                            <div class="areaContent" id="americaHotel">
+                                <div class="areaBox">
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">休士頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">芝加哥</div>
+                                    <div class="eachArea">華盛頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">舊金山</div>
+                                    <div class="eachArea">多倫多</div>
+                                    <div class="eachArea">聖保羅</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">加州安大略</div>
+                                    <div class="eachArea">利馬</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">西雅圖</div>
+                                    <div class="eachArea">波士頓</div>
+                                    <div class="eachArea">墨西哥市</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐洲澳洲 -->
+                            <div class="areaContent" id="euroHotel">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">布里斯本</div>
+                                    <div class="eachArea">布拉格</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                    <div class="eachArea">馬德里</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">阿姆斯特丹</div>
+                                    <div class="eachArea">墨爾本</div>
+                                    <div class="eachArea">蘇黎士</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">關島</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">雪梨</div>
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">帛琉</div>
+                                </div>
+                            </div>
+                            <!-- 其他 -->
+                            <div class="areaContent" id="otherHotel">
+                                <div class="areaBox">
+                                    <div class="eachArea">伊斯坦堡</div>
+                                    <div class="eachArea">加德滿都</div>
+                                    <div class="eachArea">班加羅爾</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">杜拜</div>
+                                    <div class="eachArea">開羅</div>
+                                    <div class="eachArea">孟買</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">馬爾地夫</div>
+                                    <div class="eachArea">可倫坡</div>
+                                    <div class="eachArea">安曼</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新德里</div>
+                                    <div class="eachArea">約翰尼斯堡</div>
+                                    <div class="eachArea">卡薩布蘭卡</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">特拉維夫</div>
+                                    <div class="eachArea">斯里蘭卡</div>
+                                    <div class="eachArea">奈洛比</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+
+                    <label class="flightEachItemSpan" for="frontDate"></label>
+                    <input class="flightEachItem dateText frontDate" type="date" id="frontDate">
+                    <span class="leftMark">&rArr;</span>
+                    <label for="latterDate"></label>
+                    <input class="flightEachItem dateText latterDate" type="date" id="latterDate">
+                    <span class="flightEachItemSpan">
+                        <button class="flightEachItem planeHotelPeopleText">
+                            <span>
+                                <span class="hotelNumTop" id="hotelNumTop">1</span> 間
+                            </span>
+                            <span>
+                                ‧
+                                <span class="roomNumTop" id="roomNumTop">1</span> 位成人
+                            </span>
+                            <span>
+                                ‧
+                                <span class="peopleNumTop" id="peopleNumTop">1</span> 位孩童
+                            </span>
+                        </button>
+                        <div class="planeHotelPeopleDownBox">
+                            <div class="downLine">
+                                <span class="downTitle">房間</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton hotelMinusButton" id="hotelMinusButton">-</span>
+                                    <span class="middleNumber hotelNum" id="hotelNum">1</span>
+                                    <span class="downButton plusButton hotelPlusButton" id="hotelPlusButton">+</span>
+                                </div>
+                            </div>
+                            <div class="downLine">
+                                <span class="downTitle">成人</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton roomMinusButton" id="roomMinusButton">-</span>
+                                    <span class="middleNumber roomNum" id="roomNum">1</span>
+                                    <span class="downButton plusButton roomPlusButton" id="roomPlusButton">+</span>
+                                </div>
+                            </div>
+                            <div class="downLine">
+                                <span class="downTitle">孩童</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton peopleMinusButton"
+                                          id="peopleMinusButton">-</span>
+                                    <span class="middleNumber peopleNum" id="peopleNum">1</span>
+                                    <span class="downButton plusButton peoplePlusButton" id="peoplePlusButton">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </span>
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="flightEachItem pickme">搜尋</button>
+                </span>
+                <label class="orderEachLine lastLine">
+                    <input type="checkbox">直飛航班
+                    <span class="checkMark"></span>
+                </label>
+                <label for="flightClass" style="font-size: 20px;">艙等偏好 ：</label>
+                <select name="flightClassLevel" id="flightClass">
+                    <option value="notLimite">艙等不限</option>
+                    <option value="Economy">經濟艙</option>
+                    <option value="Elite">豪華經濟艙</option>
+                    <option value="Business">商務艙</option>
+                    <option value="First">頭等艙</option>
+                </select>
+            </div>
+            <!-- 訂房國外 -->
+            <div id="flightDirect" class="orderEachLine orderEachLineForeign">
+                <div class="inputFrontBox">
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem flightDirectFrom" type="text" placeholder="輸入出發地">
+                        <div id="areaDownBoxDirectFrom">
+                            <div class="areaTitle">
+                                <div class="areaName active" onclick="changeArea(event, 'taiwanAirport')">台灣</div>
+                                <div class="areaName" onclick="changeArea(event, 'chinaAirport')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'asiaAirport')">亞洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'americaAirport')">美洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'euroAirport')">歐澳</div>
+                                <div class="areaName" onclick="changeArea(event, 'otherAirport')">其他</div>
+                            </div>
+                            <!-- 台灣 -->
+                            <div class="areaContent" id="taiwanAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(任何)</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">金門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(松山)</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">馬祖南</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">嘉義水上</div>
+                                    <div class="eachArea">馬祖北</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">小三通</div>
+                                </div>
+                            </div>
+                            <!-- 港澳 -->
+                            <div class="areaContent" id="chinaAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+                            </div>
+                            <!-- 亞洲 -->
+                            <div class="areaContent" id="asiaAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">釜山</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">札幌</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">名古屋</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">雅加達</div>
+                                </div>
+                            </div>
+                            <!-- 美洲 -->
+                            <div class="areaContent" id="americaAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">休士頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">芝加哥</div>
+                                    <div class="eachArea">華盛頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">舊金山</div>
+                                    <div class="eachArea">多倫多</div>
+                                    <div class="eachArea">聖保羅</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">加州安大略</div>
+                                    <div class="eachArea">利馬</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">西雅圖</div>
+                                    <div class="eachArea">波士頓</div>
+                                    <div class="eachArea">墨西哥市</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐洲澳洲 -->
+                            <div class="areaContent" id="euroAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">布里斯本</div>
+                                    <div class="eachArea">布拉格</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                    <div class="eachArea">馬德里</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">阿姆斯特丹</div>
+                                    <div class="eachArea">墨爾本</div>
+                                    <div class="eachArea">蘇黎士</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">關島</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">雪梨</div>
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">帛琉</div>
+                                </div>
+                            </div>
+                            <!-- 其他 -->
+                            <div class="areaContent" id="otherAirport">
+                                <div class="areaBox">
+                                    <div class="eachArea">伊斯坦堡</div>
+                                    <div class="eachArea">加德滿都</div>
+                                    <div class="eachArea">班加羅爾</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">杜拜</div>
+                                    <div class="eachArea">開羅</div>
+                                    <div class="eachArea">孟買</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">馬爾地夫</div>
+                                    <div class="eachArea">可倫坡</div>
+                                    <div class="eachArea">安曼</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新德里</div>
+                                    <div class="eachArea">約翰尼斯堡</div>
+                                    <div class="eachArea">卡薩布蘭卡</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">特拉維夫</div>
+                                    <div class="eachArea">斯里蘭卡</div>
+                                    <div class="eachArea">奈洛比</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="leftMark">&rArr;</span>
+                    <!-- 來回到 -->
+                    <span class="flightEachItemSpan">
+                        <input class="flightEachItem flightDirectTo" type="text" placeholder="輸入目的地">
+                        <div id="areaDownBoxDirectTo">
+                            <div class="areaTitle">
+                                <div class="areaName active" onclick="changeArea(event, 'taiwanAirport2')">台灣</div>
+                                <div class="areaName" onclick="changeArea(event, 'chinaAirport2')">港澳大陸</div>
+                                <div class="areaName" onclick="changeArea(event, 'asiaAirport2')">亞洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'americaAirport2')">美洲</div>
+                                <div class="areaName" onclick="changeArea(event, 'euroAirport2')">歐澳</div>
+                                <div class="areaName" onclick="changeArea(event, 'otherAirport2')">其他</div>
+                            </div>
+                            <!-- 熱門 -->
+                            <div class="areaContent" id="taiwanAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(任何)</div>
+                                    <div class="eachArea">花蓮</div>
+                                    <div class="eachArea">金門</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台北(松山)</div>
+                                    <div class="eachArea">台東</div>
+                                    <div class="eachArea">馬祖南</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台中</div>
+                                    <div class="eachArea">嘉義水上</div>
+                                    <div class="eachArea">馬祖北</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">台南</div>
+                                    <div class="eachArea">澎湖</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">高雄</div>
+                                    <div class="eachArea">小三通</div>
+                                </div>
+                            </div>
+                            <!-- 港澳 -->
+                            <div class="areaContent" id="chinaAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">香港</div>
+                                    <div class="eachArea">珠海</div>
+                                    <div class="eachArea">蘇州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">澳門</div>
+                                    <div class="eachArea">廣州</div>
+                                    <div class="eachArea">杭州</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">上海</div>
+                                    <div class="eachArea">深圳</div>
+                                    <div class="eachArea">成都</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">廈門</div>
+                                    <div class="eachArea">南京</div>
+                                    <div class="eachArea">昆明</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">北京</div>
+                                    <div class="eachArea">福州</div>
+                                    <div class="eachArea">三亞</div>
+                                </div>
+                            </div>
+                            <!-- 亞洲 -->
+                            <div class="areaContent" id="asiaAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">東京</div>
+                                    <div class="eachArea">曼谷</div>
+                                    <div class="eachArea">釜山</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">大阪</div>
+                                    <div class="eachArea">新加坡</div>
+                                    <div class="eachArea">札幌</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">福岡</div>
+                                    <div class="eachArea">胡志明市</div>
+                                    <div class="eachArea">名古屋</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">沖繩</div>
+                                    <div class="eachArea">吉隆坡</div>
+                                    <div class="eachArea">馬尼拉</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">首爾</div>
+                                    <div class="eachArea">峇里島</div>
+                                    <div class="eachArea">雅加達</div>
+                                </div>
+                            </div>
+                            <!-- 美洲 -->
+                            <div class="areaContent" id="americaAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">洛杉磯</div>
+                                    <div class="eachArea">夏威夷</div>
+                                    <div class="eachArea">休士頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">紐約</div>
+                                    <div class="eachArea">芝加哥</div>
+                                    <div class="eachArea">華盛頓</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">舊金山</div>
+                                    <div class="eachArea">多倫多</div>
+                                    <div class="eachArea">聖保羅</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">溫哥華</div>
+                                    <div class="eachArea">加州安大略</div>
+                                    <div class="eachArea">利馬</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">西雅圖</div>
+                                    <div class="eachArea">波士頓</div>
+                                    <div class="eachArea">墨西哥市</div>
+                                </div>
+
+                            </div>
+                            <!-- 歐洲澳洲 -->
+                            <div class="areaContent" id="euroAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">倫敦</div>
+                                    <div class="eachArea">布里斯本</div>
+                                    <div class="eachArea">布拉格</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">巴黎</div>
+                                    <div class="eachArea">奧克蘭</div>
+                                    <div class="eachArea">馬德里</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">阿姆斯特丹</div>
+                                    <div class="eachArea">墨爾本</div>
+                                    <div class="eachArea">蘇黎士</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">法蘭克福</div>
+                                    <div class="eachArea">維也納</div>
+                                    <div class="eachArea">關島</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">雪梨</div>
+                                    <div class="eachArea">羅馬</div>
+                                    <div class="eachArea">帛琉</div>
+                                </div>
+                            </div>
+                            <!-- 其他 -->
+                            <div class="areaContent" id="otherAirport2">
+                                <div class="areaBox">
+                                    <div class="eachArea">伊斯坦堡</div>
+                                    <div class="eachArea">加德滿都</div>
+                                    <div class="eachArea">班加羅爾</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">杜拜</div>
+                                    <div class="eachArea">開羅</div>
+                                    <div class="eachArea">孟買</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">馬爾地夫</div>
+                                    <div class="eachArea">可倫坡</div>
+                                    <div class="eachArea">安曼</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">新德里</div>
+                                    <div class="eachArea">約翰尼斯堡</div>
+                                    <div class="eachArea">卡薩布蘭卡</div>
+                                </div>
+                                <div class="areaBox">
+                                    <div class="eachArea">特拉維夫</div>
+                                    <div class="eachArea">斯里蘭卡</div>
+                                    <div class="eachArea">奈洛比</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+
+
+                    <label for="latterDate"></label>
+                    <input class="flightEachItem dateText latterDate flightDirectDate" type="date" id="latterDate">
+                    <span class="flightEachItemSpan">
+                        <button class="flightEachItem peopleText flightDirectPeople">
+                            <span>
+                                <span class="roomNumTop" id="roomNumTop">1</span> 位成人
+                            </span>
+                            <span>
+                                ‧
+                                <span class="peopleNumTop" id="peopleNumTop">1</span> 位孩童
+                            </span>
+                        </button>
+                        <div class="peopleDownBox peopleDownBox">
+                            <div class="downLine">
+                                <span class="downTitle">成人</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton roomMinusButton" id="roomMinusButton">-</span>
+                                    <span class="middleNumber roomNum" id="roomNum">1</span>
+                                    <span class="downButton plusButton roomPlusButton" id="roomPlusButton">+</span>
+                                </div>
+                            </div>
+                            <div class="downLine">
+                                <span class="downTitle">孩童</span>
+                                <div class="plusBox">
+                                    <span class="downButton minusButton peopleMinusButton"
+                                          id="peopleMinusButton">-</span>
+                                    <span class="middleNumber peopleNum" id="peopleNum">1</span>
+                                    <span class="downButton plusButton peoplePlusButton" id="peoplePlusButton">+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </span>
+                </div>
+                <span class="flightEachItemSpan" id="searchButtonSpan">
+                    <button id="searchButton" class="flightEachItem">搜尋</button>
+                </span>
+                <label class="orderEachLine lastLine">
+                    <input type="checkbox">直飛航班
+                    <span class="checkMark"></span>
+                </label>
+                <label for="flightClass" style="font-size: 20px;">艙等偏好 ：</label>
+                <select name="flightClassLevel" id="flightClass">
+                    <option value="notLimite">艙等不限</option>
+                    <option value="Economy">經濟艙</option>
+                    <option value="Elite">豪華經濟艙</option>
+                    <option value="Business">商務艙</option>
+                    <option value="First">頭等艙</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- 底下內容 -->
+    <div id="belowBox">
+        <div id="paddingBox">
+            <div id="belowInsideBox">
+                <div id="islandTrain" class="imageBox">
+                    <img src="./img/train.jpg" alt="ImageBroken" class="image">
+                    <div class="wordBox">
+                        <div class="imageWord">鳴日號環島</div>
+                    </div>
+                </div>
+
+                <div id="fireFly" class="imageBox">
+                    <img src="./img/firefly.jpg" alt="ImageBroken" class="image">
+                    <div class="wordBox">
+                        <div class="imageWord">南投．日月潭、清境農場</div>
+                    </div>
+                </div>
+
+
+                <div id="palauHotel" class="imageBox2">
+                    <img src="./img/palauHotel.jpg" alt="ImageBroken" class="image2">
+                    <div class="wordBox2">
+                        <div class="imageWord2">帛琉．海洋別墅</div>
+                    </div>
+                </div>
+                <div id="sakura" class="imageBox2">
+                    <img src="./img/sakura.png" alt="ImageBroken" class="image2">
+                    <div class="wordBox2">
+                        <div class="imageWord2">武陵農場<br>祕境逍遙之旅</div>
+                    </div>
+                </div>
+                <div id="fallHotel" class="imageBox2">
+                    <img src="./img/fallhotel.jpg" alt="ImageBroken" class="image2">
+                    <div class="wordBox2">
+                        <div class="imageWord2">客製化<br>秋の山會館</div>
+                    </div>
+                </div>
+            </div>
+            <div id="loading"><img src="./img/loading.gif"></div>
+            <div id="belowInsideBox2">
+                <div class="itineraryBox">
+                    <div id="bg-image" class="imageSpace">&emsp;</div>
+                    <div class="bg-text">
+
+                        <p id="overHotelName" style="font-size:40px">東京京王廣場酒店</p>
+                        <span id="hotalStar">★★★★★</span>
+                        <h3 id="clickTicket">點擊選擇機票 &raquo;</h3>
+                    </div>
+                </div>
+                <div class="itineraryBox">
+                    <div id="bg-image2" class="imageSpace">&emsp;</div>
+                    <div class="bg-text">
+
+                        <p id="overHotelName2" style="font-size:40px">東京灣希爾頓酒店</p>
+                        <span id="hotalStar2">★★★★</span><span style="font-size: 1.5em;">★</span>
+                        <h3 id="clickTicket2">點擊選擇機票 &raquo;</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="downMore">往下更多 ▼</div>
+            <div id="belowInsideBox3">
+                <div class="itineraryBox">
+                    <div id="bg-image3" class="imageSpace">&emsp;</div>
+                    <div class="bg-text">
+
+                        <p id="overHotelName3" style="font-size:40px">東京丸之內四季酒店</p>
+                        <span id="hotalStar3">★★★★</span><span style="font-size: 1.5em;">★</span>
+                        <h3 id="clickTicket3">點擊選擇機票 &raquo;</h3>
+                    </div>
+                </div>
+                <div class="itineraryBox">
+                    <div id="bg-image4" class="imageSpace">&emsp;</div>
+                    <div class="bg-text">
+
+                        <p id="overHotelName4" style="font-size:40px">東京灣大倉酒店</p>
+                        <span id="hotalStar4">★★★★★</span>
+                        <h3 id="clickTicket4">點擊選擇機票 &raquo;</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="downMore2">往下更多 ▼</div>
+        </div>
+    </div>
+    <!-- CopyRight -->
+    <hr id="bottomLine">
+    <div id="bottomBox">
+        <div id="bottomSecondBox">
+            <div id="bottomNameBox">
+                <div id="bottomCompanyName">大里之星旅行社股份有限公司</div>
+                <div class="bottomSmall">交觀綜1674 │ 品保中0943</div>
+                <div class="bottomSmall">代表人：李祐豪</div>
+                <div class="bottomSmall">服務信箱：departmentofservice@daliofstar.com.tw</div>
+                <div class="bottomSmall">台中總公司：04-22759098</div>
+            </div>
+            <div id="bottomAboutBox">
+                <div class="bottomTitle">關於我們</div>
+                <div class="bottomSmall">辦公室交通指南</div>
+                <div class="bottomSmall">領隊介紹</div>
+                <div class="bottomSmall">特約廠商</div>
+                <div class="bottomSmall">隱私權及會員條款</div>
+                <div class="bottomTitle">關係企業</div>
+                <div class="bottomSmall">平安歸旅遊</div>
+            </div>
+            <div id="bottomCopyRightBox">
+                <div class="bottomSmall bottomCopyRight">Copyright © 2021 All Rights Reserved</div>
+                <div class="bottomSmall bottomCopyRight">Folls 網頁設計</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        var slideIndex = 0;
+        changeImage();
+    </script>
+
+</body>
+
+</html>
